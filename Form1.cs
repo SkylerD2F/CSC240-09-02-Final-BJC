@@ -51,6 +51,40 @@ namespace Rock_paper_scissors
                     pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
                     break;
             }
+            determineWinner(computerTurn, playerTurn);
+            
+        }
+        public void determineWinner(int computerScore, int playerScore)
+        {
+            if(computerScore ==1 && playerScore ==2)
+            {
+                label1.Text = "You win!";
+            }
+            else if(computerScore == 1 && playerScore == 3)
+            {
+                label1.Text = "The Computer wins!";
+            }
+            else if (computerScore == 2 && playerScore == 1)
+            {
+                label1.Text = "The Computer wins!";
+            }
+            else if (computerScore == 2 && playerScore == 3)
+            {
+                label1.Text = "You win!";
+            }
+            else if (computerScore == 3 && playerScore == 2)
+            {
+                label1.Text = "The Computer wins!";
+            }
+            else if (computerScore == 3 && playerScore == 1)
+            {
+                label1.Text = "You win!";
+            }
+            else 
+            {
+                label1.Text = "No one wins!";
+            }
+            
         }
     }
 }
