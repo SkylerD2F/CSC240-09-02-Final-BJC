@@ -16,7 +16,7 @@ namespace Rock_paper_scissors
             switch (computerTurn)
             {
                 case 1:
-                    pictureBox1.ImageLocation = "../../../Resources/rock.jpg";
+                    pictureBox1.ImageLocation = "../../../Resources/rock.jpg"; // changed images to the ones in the project instead of your C:\"
                     pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                     break;
                 case 2:
